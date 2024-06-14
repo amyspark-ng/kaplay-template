@@ -2,12 +2,12 @@
   "build": {
     "beforeDevCommand": "pnpm web:dev",
     "beforeBuildCommand": "pnpm web:build",
-    "devPath": "http://localhost:1420",
+    "devPath": "http://localhost:8000",
     "distDir": "../dist",
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "osaka_clicking",
+    "productName": "your_game_name_here",
     "version": "1.0.0"
   },
   "tauri": {
@@ -20,7 +20,7 @@
     },
     "windows": [
       {
-        "title": "Osaka Clicking",
+        "title": "Your game name here",
         "width": 800,
         "height": 600
       }
@@ -31,7 +31,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "amysparkngng.osakaclicking",
+      "identifier": "yournamehere.yourproductidentifierhere",
       "icon": [
         "icons/icon.png",
         "icons/icon.ico",
