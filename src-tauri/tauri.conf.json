@@ -33,7 +33,9 @@
       "targets": "all",
       "identifier": "amysparkngng.osakaclicking",
       "icon": [
-        "icons/app-icon.png"
+        "icons/icon.png",
+        "icons/icon.ico",
+        "icons/icon.icns"
       ]
     }
   }
