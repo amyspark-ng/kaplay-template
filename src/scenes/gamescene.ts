@@ -1,6 +1,7 @@
-import { addConfetti } from "./plugins/confetti"
-import { positionSetter } from "./plugins/positionsetter"
 // import { volumeManager } from "./plugins/volumebar"
+
+import { addConfetti } from "../plugins/confetti.ts"
+import { positionSetter } from "../plugins/positionsetter.ts"
 
 export function gamescene() {
 	return scene("gamescene", () => {

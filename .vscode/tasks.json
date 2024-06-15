@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0", // this is needed apparently
+	"tasks": [
+		// Needs 7zip
+		{
+			"label": "Build: Build kaplay for html5",
+			"type": "shell",
+			"command": "pnpm web:build ; 7z a -tzip ./builds/web-build.zip ./dist/*",
+			"group": {
+				"kind": "build",
+			}
+		},
+		{
+			"label": "Build: Build kaplay for desktop",
+			"type": "shell",
+			"command": "pnpm build ; 7z a -tzip ./builds/desktop-build.zip ./src-tauri/target/release/*.exe",
+			"group": {
+				"kind": "build",
+			}
+		},
+		{
+			// This runs the pnpm build and then runs the butler to send it to itch.io
+			// Needs 7zip
+			"label": "Itch.io: Deliver kaplay for html5",
+			"type": "shell",
+			"command": "pnpm web:build ; 7z a -tzip ./builds/web-build.zip ./dist/* ; butler push builds/web-build.zip your_name_here/your_game_name_here:html5 --userversion 1.0",
+		},
+		{
+			// This runs the pnpm build and then runs the butler to send it to itch.io
+			// Needs 7zip
+			"label": "Itch.io: Deliver kaplay desktop",
+			"type": "shell",
+			"command": "pnpm build ; 7z a -tzip ./builds/desktop-build.zip ./src-tauri/target/release/*.exe ; butler push builds/desktop-build.zip your_name_here/your_game_here:windows --userversion 1.0",
+		},
+	]
+}

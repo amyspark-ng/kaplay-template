@@ -20,9 +20,11 @@
     },
     "windows": [
       {
-        "title": "Your game name here",
+        "title": "Your window title here",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "maximizable": true,
+        "center": true
       }
     ],
     "security": {

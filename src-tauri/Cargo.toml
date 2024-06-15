@@ -1,7 +1,7 @@
 [package]
-name = "name_here"
+name = "your_app_name_here"
 version = "1.0.0"
-description = "description_here"
+description = "your_app_name_description_here"
 authors = ["you"]
 edition = "2021"
 

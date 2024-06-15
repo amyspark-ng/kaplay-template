@@ -1,4 +1,4 @@
-import { gamescene } from "./gamescene"
+import { gamescene } from "./scenes/gamescene.ts"
 
 export function loadEverything() {
 	loadSprite("osaka", "assets/osaka.png")

@@ -1,5 +1,6 @@
 # Kaplay Template (by amyspark-ng & niceEli)
 Template for the web game library [KAPLAY](https://kaplayjs.com/), which helps you to make games fast and fun!
+* Running `kaplay v3001.0.0-alpha.10`
 
 It works with vite and tauri for desktop builds
 
@@ -38,10 +39,13 @@ It works with vite and tauri for desktop builds
 9. That's it! Happy coding ;)
 
 ### **BIG NOTE:** <br>
-Desktop builds are 100% safe, don't believe me? You're looking the repository with the source code for the template:<br>
-* Here's the source code of tauri: https://github.com/tauri-apps/tauri<br> 
-* Here's the source code of vite: https://github.com/vitejs/vite<br>
+Desktop builds are 100% safe, don't believe me? You're looking the repository with the source code for the template, and also:<br>
+* Here's the source code of tauri (for desktop builds): https://github.com/tauri-apps/tauri<br> 
+* Here's the source code of vite (for rendering): https://github.com/vitejs/vite<br>
 * Here's the source code of pnpm: https://github.com/pnpm/pnpm<br>
+
+If you want windows defender to not bother you, you'll have to pay a very very expensive fine!!
+* https://signmycode.com/windows-code-signing
 
 ## Other
 ### Game identification: 
@@ -62,4 +66,4 @@ Recommend searching for "name_here" or "your name here" or similar things
 
 <br>
 
-![Alt text](app-icon.png "a title")
+![Repost if you dip your  in the wendy's frosty](app-icon.png "Repost if you dip your  in the wendy's frosty")
