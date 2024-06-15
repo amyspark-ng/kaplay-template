@@ -1,5 +1,7 @@
 # Kaplay Template (by amyspark-ng & niceEli)
-Works with vite and tauri (for desktop and mobile builds)
+Template for the web game library [KAPLAY](https://kaplayjs.com/), which helps you to make games fast and fun!
+
+It works with vite and tauri for desktop builds
 
 ## Development
 ### Structure
@@ -42,17 +44,22 @@ Desktop builds are 100% safe, don't believe me? You're looking the repository wi
 * Here's the source code of pnpm: https://github.com/pnpm/pnpm<br>
 
 ## Other
+### Game identification: 
 - Please update your product name and identifier on `src/tauri/tauri.conf.json`<br>
 > https://tauri.app/v1/api/config/
-
 Recommend searching for "name_here" or "your name here" or similar things 
-
-- It automatically updates on save and uses any npm client
-- Can use typescript AND javascript (as long as it's module and not cjs)
-- Is hosted on localhost:8000
+- You can get the icons replacing the [app-icon.png](app-icon.png) with a square image and doing `pnpm tauri icon` or `cargo tauri icon` and it should generate them for you, tauri.conf.json is configured for them to work
 - "Save file" is in `%localappdata%/${bundle.identifier}/EBWebView/Default/Local Storage/leveldb`
 	- **NOT EDITABLE**
 - Conditional compiling: 
 	- Desktop: `'__TAURI__' in window`
 
-- You can get the icons replacing the app-icon with a square image and doing `pnpm tauri icon` or `cargo tauri icon` and it should generate them for you, tauri.conf.json is configured for them to work
+### Dev:
+- It automatically updates on save, also uses any npm client
+- Can use typescript AND javascript (as long as it's module and not cjs)
+- Is hosted on localhost:8000
+^ You can change it in `vite.config.mts` in `server.port`
+
+<br>
+
+![Alt text](app-icon.png "a title")
