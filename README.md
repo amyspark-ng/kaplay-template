@@ -10,7 +10,7 @@ It works with vite and tauri for desktop builds
 - `/src-tauri/` contains:
 	- build folders<br>
 	- window settings (`tauri.conf.json`)<br>
-- `/public/assets` is all the assets<br>
+- `/assets` has all the assets, to load one you'd do `loadSprite("osaka", "sprites/osaka.png")` no need for `loadRoot()`
 
 ### Building
 - **`pnpm dev`** runs the game in a window

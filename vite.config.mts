@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { defineConfig } from "vite";
 import { viteSingleFile } from "vite-plugin-singlefile"
 
@@ -17,7 +18,7 @@ export default defineConfig(async () => ({
       ignored: ["**/src-tauri/**"],
     },
   },
-  publicDir: "./public",
+  publicDir: "./assets",
   build: {
     minify: "terser",
     chunkSizeWarningLimit: 10000,

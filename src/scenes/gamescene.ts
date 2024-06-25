@@ -1,11 +1,13 @@
-// import { volumeManager } from "./plugins/volumebar"
+import { appWindow } from "@tauri-apps/api/window";
+
+import { volumeManager } from "../plugins/volumebar.ts"
 
 import { addConfetti } from "../plugins/confetti.ts"
 import { positionSetter } from "../plugins/positionsetter.ts"
 
 export function gamescene() {
 	return scene("gamescene", () => {
-		// volumeManager()
+		volumeManager()
 		
 		add([
 			sprite("osaka"),

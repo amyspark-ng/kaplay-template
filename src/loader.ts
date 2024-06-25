@@ -1,12 +1,12 @@
 import { gamescene } from "./scenes/gamescene.ts"
 
 export function loadEverything() {
-	loadSprite("osaka", "assets/osaka.png")
+	loadSprite("osaka", "osaka.png")
 	
-	loadSound("volumeChange", "assets/volumeChange.wav")
+	loadSound("volumeChange", "sounds/volumeChange.wav")
 
-	loadSound("music", "assets/music.ogg")
-	loadSound("click", "assets/saataandagi.ogg")
+	loadSound("music", "sounds/music.ogg")
+	loadSound("click", "sounds/saataandagi.ogg")
 
 	gamescene()
 }
